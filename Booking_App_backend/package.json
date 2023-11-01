@@ -1,0 +1,30 @@
+{
+  "name": "booking-appointment-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PMehar/ExpressRevision_Routes.git"
+  },
+  "author": "Puja Mehar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PMehar/ExpressRevision_Routes/issues"
+  },
+  "homepage": "https://github.com/PMehar/ExpressRevision_Routes#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mysql2": "^3.6.2",
+    "pug": "^3.0.2",
+    "sequelize": "^6.33.0"
+  }
+}
