@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expence_Tracker</title>
+    <link rel="stylesheet" href="expence.css">
+    <script src="expence.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js" integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Expence Tracker</h1>
+        <div class="box">
+            <form action="#" onsubmit="registerExpence(event)" id="register" method="get">
+                <label for="amount">Amount:</label>
+                <input type="text" name="amount" id="amount" placeholder="Enter Amount here"><br> <br>
+                <label for="description">Description: </label>
+                <input type="text" name="description" id="description" placeholder="Add description here"><br><br>
+                <label for="category">Category: </label>
+                <select name="category" id="category">
+                    <option value="select">----Select from here----</option>
+                    <option value="Movies">Movies</option>
+                    <option value="Food">Food</option>
+                    <option value="travelling">travelling</option>
+                    <option value="fuel">fuel</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="other">other</option>
+                </select><br><br>
+                <button type="submit">Add Expence</button>
+            </form>    
+        </div>  
+    </div>
+    <div class="expence_list">
+        <h3>All Expences</h3>
+        <ul id="list"></ul>
+    </div>
+</body>
+</html>
